@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+    <form action="/create" , method="POST">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" , name="title" , placeholder="Title" , required>
+        </div>
+        <div class="form-group">
+            <label for="text">Text</label>
+            <textarea name="text" placeholder="Text" wrap="hard" required></textarea>
+        </div>
+        <input type="submit" value="Post" class="button center">
+    </form>
+
+
+    <%- include('partials/footer.ejs') %>

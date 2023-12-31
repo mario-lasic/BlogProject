@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="container">
+        <% if (locals.posts && locals.posts.length !== 0) { %>
+            <ul class="plists">
+                <% for( let index=0; index < posts.length; index++ ) { %>
+                    <div class="blog_post">
+                        <div class="container_copy">
+                            <h1><%= posts[index].title %></h1>
+                            <p class="preview"><%= posts[index].text %></p>
+                            <li><a class="btn" href=<%= "/p/"+index %>>Read More</a></li>
+                        </div>
+                    </div>
+                    
+                    <% } %>
+            </ul>
+            <% } else { %>
+                <p>Posts are empty</p>
+                <% } %>
+    </div>
+
+
+
+
+    <%- include('partials/footer.ejs') %>

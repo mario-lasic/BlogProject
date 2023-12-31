@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="post">
+        <div>
+            <h1>
+                <%= post.title %>
+            </h1>
+            <hr>
+            <p>
+                <%= post.text %>
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <form action=<%="/edit/" +post.id %> method="GET">
+            <input type="submit" value="Edit" class="button">
+        </form>
+
+        <form action="/delete" method="POST">
+            <input type="hidden" name="id" value=<%=post.id %>>
+            <input type="submit" value="Delete" class="button">
+        </form>
+    </div>
+
+    <%- include('partials/footer.ejs') %>

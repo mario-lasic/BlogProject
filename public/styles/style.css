@@ -1,0 +1,199 @@
+body {
+    margin: 10px;
+    padding: 10px;
+    background-color: #43766C;
+    color: #F8FAE5;
+}
+
+nav {
+    display: block;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline-block;
+    justify-content: center;
+}
+
+.title {
+    font-family: serif;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+
+img {
+    height: 2em;
+    width: 2em;
+}
+
+.fcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.fcontainer * {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 0px;
+}
+
+main {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form * {
+    display: block;
+    width: 50%;
+}
+
+.button {
+    width: fit-content;
+    font-family: serif;
+    font-size: 3em;
+    text-decoration: none;
+    background-color: #B19470;
+    color: #F8FAE5;
+    padding: 10px;
+    border-radius: 25%;
+}
+
+.form-group {
+    padding: 10px;
+    border: 2px solid #B19470;
+    margin: 10px;
+}
+
+.form-group>label {
+    width: fit-content;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    background-color: #43766C;
+}
+
+.form-group>input {
+    border: none;
+    height: 2em;
+    width: 96%;
+    background-color: #F8FAE5;
+    padding: 2%;
+    font-size: 2em;
+}
+
+textarea {
+    height: 300px;
+    width: 96%;
+    background-color: #F8FAE5;
+    padding: 2%;
+    font-size: 1.3em;
+}
+
+.blog_post {
+    background: #B19470;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container_copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.container_copy * {
+    display: block;
+    width: auto;
+}
+
+.btn {
+    width: fit-content;
+    font-family: serif;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #43766C;
+    color: #F8FAE5;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 25%;
+}
+
+.plists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.post div{
+    width: 50%;
+    text-align: center;
+    border: 1px solid #B19470;
+}
+
+.post p{
+    text-align: start;
+    padding: 5px;
+    white-space: pre-line;
+}
+
+
+hr{
+    border: 3px solid #B19470;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper form{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.top{
+    text-decoration: none;
+    color: #F8FAE5;
+}
